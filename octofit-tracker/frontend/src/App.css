@@ -1,0 +1,188 @@
+/* OctoFit Tracker Custom Styles */
+.App {
+  text-align: left;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content area */
+main {
+  flex: 1;
+  padding: 0;
+}
+
+/* Custom Bootstrap enhancements */
+.card {
+  border: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: box-shadow 0.15s ease-in-out, transform 0.15s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Enhanced buttons */
+.btn {
+  border-radius: 0.375rem;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Avatar styles */
+.avatar {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Progress bars */
+.progress {
+  border-radius: 0.5rem;
+  background-color: #e9ecef;
+}
+
+.progress-bar {
+  border-radius: 0.5rem;
+}
+
+/* Table enhancements */
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Badge enhancements */
+.badge {
+  font-weight: 500;
+  padding: 0.375rem 0.75rem;
+}
+
+/* Navigation enhancements */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: color 0.15s ease-in-out;
+}
+
+/* Jumbotron alternative for Bootstrap 5 */
+.jumbotron {
+  padding: 4rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(135deg, #007bff 0%, #6610f2 100%);
+}
+
+/* Footer styling */
+footer {
+  margin-top: auto;
+  border-top: 1px solid #dee2e6;
+}
+
+/* Loading and error states */
+.loading-spinner {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: text-bottom;
+  border: 0.25em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spinner-border 0.75s linear infinite;
+}
+
+@keyframes spinner-border {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Podium animation */
+.podium-place {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .jumbotron {
+    padding: 2rem 1rem;
+  }
+  
+  .btn-group .btn {
+    font-size: 0.875rem;
+  }
+}
+
+/* Dark mode support (optional) */
+@media (prefers-color-scheme: dark) {
+  .card {
+    background-color: #2d3748;
+    border-color: #4a5568;
+  }
+  
+  .table-dark {
+    --bs-table-bg: #1a202c;
+  }
+}
+
+/* Custom utility classes */
+.text-shadow {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.border-start-primary {
+  border-left: 4px solid #007bff !important;
+}
+
+.border-start-success {
+  border-left: 4px solid #28a745 !important;
+}
+
+.border-start-warning {
+  border-left: 4px solid #ffc107 !important;
+}
+
+.border-start-danger {
+  border-left: 4px solid #dc3545 !important;
+}
+
+/* Stats card enhancements */
+.stats-card {
+  background: linear-gradient(45deg, #f8f9fa, #ffffff);
+  border-left: 4px solid #007bff;
+}
+
+/* Animation for page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
